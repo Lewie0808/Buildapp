@@ -1,0 +1,28 @@
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.Properties.Resources.resources
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.GenerateResource.Cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.BuildApp.resources
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\bin\Debug\NetworkApp.exe.config
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\bin\Debug\NetworkApp.exe
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\bin\Debug\NetworkApp.pdb
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\NetworkApp.exe
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\NetworkApp.pdb
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\Interop.MsoEuro.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.ResolveComReference.cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.csprojResolveAssemblyReference.cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.exe.config
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\Interop.MsoEuro.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.ResolveComReference.cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.exe
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.pdb
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.Dmf.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.csprojResolveAssemblyReference.cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.BuildApp.resources
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.Properties.Resources.resources
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.GenerateResource.Cache
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.exe
+C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.pdb
