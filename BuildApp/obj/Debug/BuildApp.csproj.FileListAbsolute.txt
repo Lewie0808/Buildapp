@@ -10,7 +10,6 @@ C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.ResolveComReference.cache
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\BuildApp\BuildApp\obj\Debug\BuildApp.csprojResolveAssemblyReference.cache
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.exe.config
-C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\Interop.MsoEuro.dll
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\obj\Debug\BuildApp.csproj.ResolveComReference.cache
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.exe
 C:\Users\john.lewis\Documents\Visual Studio 2015\Projects\Network App\BuildApp\BuildApp\bin\Debug\BuildApp.pdb

@@ -27,10 +27,10 @@ namespace BuildApp
             InitializeComponent();
 
             GetIPAddress();
-            GetOS();
-            GetRAM();
-            GetPCName();
-            GetDNS();
+            GetOs();
+            GetRam();
+            GetPcName();
+            GetDns();
             GetInstalledSoftware();
             GetLocalUsers();
             GetgrpBoxInst();
@@ -39,8 +39,8 @@ namespace BuildApp
         }
 
 
-        #region AddDNS
-        public void AddDNS(object sender, EventArgs e)
+        #region AddDns
+        private void AddDns(object sender, EventArgs e)
         {
             ManagementClass mClass = new ManagementClass("Win32_NetworkAdapterConfiguration");
             ManagementObjectCollection mObjCol = mClass.GetInstances();
@@ -51,16 +51,16 @@ namespace BuildApp
             {
                 if ((bool)mObj["IPEnabled"])
                 {
-                    ManagementBaseObject mboDNS = mObj.GetMethodParameters("SetDNSServerSearchOrder");
-                    if (mboDNS != null)
+                    ManagementBaseObject mboDns = mObj.GetMethodParameters("SetDNSServerSearchOrder");
+                    if (mboDns != null)
                     {
                         //Assume X.X.X.X and X.X.X.X are the IPs.
                         string[] sIPs = { "172.26.49.130", "172.26.49.131" };
 
                         try
                         {
-                            mboDNS["DNSServerSearchOrder"] = sIPs;
-                            mObj.InvokeMethod("SetDNSServerSearchOrder", mboDNS, null);
+                            mboDns["DNSServerSearchOrder"] = sIPs;
+                            mObj.InvokeMethod("SetDNSServerSearchOrder", mboDns, null);
                         }
                         catch
                         {
@@ -70,12 +70,12 @@ namespace BuildApp
                         {
                             if (errorOnTry)
                             {
-                                labelReNameSatus.Text = ("Failed");
+                                labelReNameSatus.Text = (@"Failed");
                                 chkbxdnsad.Checked = false;
                             }
                             else
                             {
-                                labelReNameSatus.Text = ("Address added");
+                                labelReNameSatus.Text = (@"Address added");
                                 chkbxdnsad.Checked = true;
                             }
                         }
@@ -85,12 +85,12 @@ namespace BuildApp
         }
         #endregion
 
-        #region GetPCName
-        private void GetPCName()
+        #region GetPcName
+        private void GetPcName()
         {
             //Get PC Name
             textBoxPCName.Text = System.Environment.MachineName;
-            textBoxHostName.Text = ("Hostname: " + System.Environment.MachineName);
+            textBoxHostName.Text = (@"Hostname: " + System.Environment.MachineName);
             txtBoxSrv.Text = System.Environment.MachineName;
         }
         #endregion
@@ -139,10 +139,10 @@ namespace BuildApp
         #endregion
 
         #region DNS
-        private void GetDNS()
+        private void GetDns()
         {
             //DNS
-            StringBuilder StringBuilder1 = new StringBuilder(string.Empty);
+            StringBuilder stringBuilder = new StringBuilder(string.Empty);
 
             NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
             foreach (NetworkInterface ni in nics)
@@ -154,18 +154,18 @@ namespace BuildApp
                     {
                         if (dns.ToString().Length < 16)
                         {
-                            StringBuilder1.AppendLine(dns.ToString());
+                            stringBuilder.AppendLine(dns.ToString());
                         }
                     }
                 }
             }
-            rtxtbxdns01.Text = StringBuilder1.ToString();
+            rtxtbxdns01.Text = stringBuilder.ToString();
             rtxtbxdns01.SelectionAlignment = HorizontalAlignment.Center;
         }
         #endregion
 
         #region RAM
-        private void GetRAM()
+        private void GetRam()
         {
             //RAM
             ManagementObjectSearcher Search = new ManagementObjectSearcher("Select * From Win32_ComputerSystem");
@@ -174,13 +174,13 @@ namespace BuildApp
 
             foreach (ManagementObject Mobject in Search.Get())
             {
-                double Ram_Bytes = (Convert.ToDouble(Mobject["TotalPhysicalMemory"]));
-                double in_gigab = Ram_Bytes / 1073741824;
+                double ramBytes = (Convert.ToDouble(Mobject["TotalPhysicalMemory"]));
+                double inGigab = ramBytes / 1073741824;
 
-                if (in_gigab > 1)
-                    ramSize = Convert.ToString(Math.Round(in_gigab, 2)) + "GB";
+                if (inGigab > 1)
+                    ramSize = Convert.ToString(Math.Round(inGigab, 2)) + "GB";
                 else
-                    ramSize = Convert.ToString(Math.Round(in_gigab * 1000, 2)) + "MB";
+                    ramSize = Convert.ToString(Math.Round(inGigab * 1000, 2)) + "MB";
 
             }
             tBRAM.Text = ramSize;
@@ -188,11 +188,11 @@ namespace BuildApp
         #endregion
 
         #region OSVersion
-        private void GetOS()
+        private void GetOs()
         {
             //OS
-            RegistryKey regKeyAppRoot = Registry.LocalMachine.OpenSubKey(@"Software\Microsoft\Windows NT\CurrentVersion");
-            tBOS.Text = (string)regKeyAppRoot.GetValue("ProductName");
+            RegistryKey keyAppRoot = Registry.LocalMachine.OpenSubKey(@"Software\Microsoft\Windows NT\CurrentVersion");
+            tBOS.Text = (string)keyAppRoot.GetValue("ProductName");
 
             //Processor
             ManagementObjectSearcher mosProcessor = new ManagementObjectSearcher("SELECT * FROM Win32_Processor");
@@ -214,16 +214,16 @@ namespace BuildApp
         {
             //IP address 
             IPHostEntry host;
-            string localIP = "IP Address";
+            string localIp = "IP Address";
             host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (IPAddress ip in host.AddressList)
             {
                 if (ip.AddressFamily.ToString() == "InterNetwork")
                 {
-                    localIP = ip.ToString();
+                    localIp = ip.ToString();
 
                 }
-                txtbxIPadd.Text = localIP;
+                txtbxIPadd.Text = localIp;
             }
         }
         #endregion
@@ -253,9 +253,9 @@ namespace BuildApp
 
             ManagementObject computerSystem = new ManagementObject("Win32_ComputerSystem.Name='" + Environment.MachineName + "'");
 
-            object Oresult = computerSystem.InvokeMethod("JoinDomainOrWorkgroup", methodArgs);
+            object oresult = computerSystem.InvokeMethod("JoinDomainOrWorkgroup", methodArgs);
 
-            int result = (int)Convert.ToInt32(Oresult);
+            int result = (int)Convert.ToInt32(oresult);
 
             //list of errors
             string strConsoleOutput = " ";

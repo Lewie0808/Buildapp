@@ -157,7 +157,7 @@
             this.btnaddDNS.TabIndex = 0;
             this.btnaddDNS.Text = "Add DNS";
             this.btnaddDNS.UseVisualStyleBackColor = true;
-            this.btnaddDNS.Click += new System.EventHandler(this.AddDNS);
+            this.btnaddDNS.Click += new System.EventHandler(this.AddDns);
             // 
             // btnClose
             // 
